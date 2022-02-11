@@ -1,0 +1,314 @@
+.button-color,
+.button-white {
+  min-width: 170px;
+  height: 54px;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button-img {
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.button-color {
+  background: $portfolio-deep;
+  color: $portfolio-white;
+}
+
+.button-white {
+  min-width: 170px;
+  height: 54px;
+  background: $portfolio-white;
+  color: $portfolio-background;
+  border-radius: 8px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 135px 0 135px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    $portfolio-background 70%,
+    $portfolio-deep 0%
+  );
+
+  .header-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-family: "Autography", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 91px;
+      display: flex;
+      align-items: center;
+      color: $portfolio-deep;
+      text-decoration: none;
+    }
+  }
+
+  #nav-check {
+    display: none;
+  }
+
+  #nav-check2 {
+    display: none;
+  }
+
+  .header-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-link-1 {
+      color: $portfolio-text;
+    }
+
+    &-link-2 {
+      color: $portfolio-white;
+    }
+  }
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 10px;
+  background: linear-gradient(
+    to right,
+    $portfolio-background 70%,
+    $portfolio-deep 0%
+  );
+  top: 80px;
+  margin-top: 70px;
+  padding: 70px 135px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-left {
+    width: 100%;
+
+    p {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      color: $portfolio-text;
+    }
+
+    h1 {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 65px;
+      color: $portfolio-text;
+
+      span {
+        color: $portfolio-deep;
+      }
+    }
+
+    h3 {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      color: $portfolio-text;
+    }
+
+    h5 {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      color: $portfolio-text;
+      margin-bottom: 32px;
+    }
+
+    &-underlay {
+      display: flex;
+      flex-direction: end;
+      margin-left: 35px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .social-circle,
+    .image-circle {
+      width: 508px;
+      height: 508px;
+      border-radius: 50%;
+    }
+
+    .social-circle {
+      border: 1px solid $portfolio-deep;
+      position: relative;
+    }
+
+    .image-circle {
+      position: relative;
+      background: $portfolio-deep;
+      margin-top: 23px;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      .my-image {
+        width: 300px;
+        height: 400px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .white-dots {
+      position: absolute;
+      right: 0;
+      top: 16px;
+      right: 0px;
+    }
+
+    .coloured-dots {
+      position: absolute;
+      bottom: -15px;
+      left: 35px;
+    }
+
+    .social-icons {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $portfolio-deep;
+
+      &-img {
+        width: 25px;
+        height: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .github {
+      left: 60px;
+      top: 30px;
+    }
+
+    .linkedin {
+      left: -5px;
+      top: 110px;
+    }
+
+    .twitter {
+      left: -30px;
+      bottom: 250px;
+    }
+
+    .instagram {
+      left: -15px;
+      bottom: 150px;
+    }
+  }
+}
+
+.about {
+  background-image: url("../assets/about-me.svg");
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding: 100px 135px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  box-sizing: border-box;
+  align-items: center;
+
+  &-left {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-right {
+    p {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: $portfolio-deep;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: $portfolio-text;
+      margin-bottom: 30px;
+    }
+  }
+}

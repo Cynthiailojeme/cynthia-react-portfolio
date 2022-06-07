@@ -10,7 +10,7 @@ import Twitter from "../assets/twitter.svg";
 
 const Landing = () => {
   return (
-    <div className="landing">
+    <div className="landing" id="home">
       <div className="landing-left">
         <p>Hi There!</p>
         <h1>
@@ -30,28 +30,28 @@ const Landing = () => {
       </div>
       <div className="landing-right">
         <div className="social-circle">
-          <a href="www.github.com">
+          <a href="https://github.com/Cynthiailojeme" target="blank">
             <div className="social-icons github">
               <div className="social-icons-img">
                 <img src={Github} alt="github" />
               </div>
             </div>
           </a>
-          <a href="www.github.com">
+          <a href="https://www.linkedin.com/in/cynthia-ilojeme/" target="blank">
             <div className="social-icons linkedin">
               <div className="social-icons-img">
                 <img src={LinkedIn} alt="github" />
               </div>
             </div>
           </a>
-          <a href="www.github.com">
+          <a href="https://twitter.com/CynthiaIlojeme" target="blank">
             <div className="social-icons twitter">
               <div className="social-icons-img">
                 <img src={Twitter} alt="twitter" />
               </div>
             </div>
           </a>
-          <a href="www.github.com">
+          <a href="https://www.instagram.com/cynthiailojeme/" target="blank">
             <div className="social-icons instagram">
               <div className="social-icons-img">
                 <img src={Instagram} alt="instagram" />

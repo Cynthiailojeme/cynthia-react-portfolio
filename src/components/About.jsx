@@ -3,22 +3,23 @@ import Download from "../assets/download.svg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-left"></div>
 
       <div className="about-right">
         <p>About Me</p>
         <h3>
           I’m Cynthia Ilojeme, a professional and talented Product Designer with
-          front end development skills.I am passionate about leveraging my
+          front end development skills. I am passionate about leveraging my
           diverse backgrounds to decipher challenging problems and create
-          delightful experiences. I honed my skills at web development,
-          technical writing, product design and SEO analytics.
+          delightful experiences. I honed my skills at web development, and
+          sometimes I dabble into technical writing as well as open source
+          contribution.
           <br />
           <br />
           I develop websites with HTML, CSS and JavaScript. I have top skills in
-          using design softwares like Figma, Adobe XD, Invision and PhotoShop;
-          with prototype tools like Framer and Protopie.
+          using Javascript libraries like React JS and Vue JS to convert
+          wireframes and designs into pixel perfect user interfaces.
           <br />
           <br />
           Being a diligent, hardworking and result oriented lady, I always work

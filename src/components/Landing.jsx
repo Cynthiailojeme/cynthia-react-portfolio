@@ -6,7 +6,7 @@ import Github from "../assets/github.svg";
 import LinkedIn from "../assets/linkedin.svg";
 import Instagram from "../assets/instagram.svg";
 import Twitter from "../assets/twitter.svg";
-// import Picture from "../assets/picture.png";
+import Picture from "../assets/picture.jpeg";
 
 const Landing = () => {
   return (
@@ -26,7 +26,9 @@ const Landing = () => {
           passionate about solving problems <br /> with code.
         </h5>
 
-        <button className="button-color">Hire Me</button>
+        <a href="mailto:cynthiaezinne1@gmail.com">
+          <button className="button-color">Hire Me</button>
+        </a>
       </div>
       <div className="landing-right">
         <div className="social-circle">
@@ -65,7 +67,7 @@ const Landing = () => {
 
           <div className="image-circle">
             <div className="my-image">
-              {/* <img src={Picture} alt="cynthia" /> */}
+              <img src={Picture} alt="cynthia" />
             </div>
           </div>
 

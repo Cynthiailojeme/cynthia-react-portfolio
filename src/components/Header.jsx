@@ -58,9 +58,9 @@ const Header = () => {
 
       <div className="header-mid" onClick={() => setClicked(false)}>
         <label htmlFor="nav-check">
-          <div className="header-mid-item1"></div>
-          <div className="header-mid-item2"></div>
-          <div className="header-mid-item3"></div>
+          <div className="header-mid-item"></div>
+          <div className="header-mid-item"></div>
+          <div className="header-mid-item"></div>
         </label>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Header = () => {
   const [clicked, setClicked] = useState(false);
 
   const closeDropdown = () => {
-    setClicked(true);
+    setClicked(!clicked);
   };
 
   return (
@@ -40,8 +40,13 @@ const Header = () => {
         <a href="#about" className="header-link-1">
           About Me
         </a>
-        <a href="#services" className="header-link-1">
-          Services
+        <a
+          href="https://docs.google.com/document/d/1dq8b98hyF07QekDUl42JlFOx3eKrs1o1fnLr_7SOs0A/edit?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+          className="header-link-1"
+        >
+          Resume
         </a>
         <a href="#portfolio" className="header-link-2">
           Portfolio

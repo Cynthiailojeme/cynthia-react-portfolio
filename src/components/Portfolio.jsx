@@ -55,7 +55,7 @@ const Portfolio = () => {
       alt: "letshego",
       image: Letshego,
       info: "Admin dashboard for the managemeent of SMS being sent by providers from various countries.",
-      url: "https://merchant.kafene.com/",
+      url: null,
     },
   ];
 
@@ -101,9 +101,11 @@ const Portfolio = () => {
               <div className="portfolio-section-info">
                 <h1>{item.title}</h1>
                 <p>{item.info}</p>
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <button className="button-color">View Site</button>
-                </a>
+                {item.url && (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    <button className="button-color">View Site</button>
+                  </a>
+                )}
               </div>
             </div>
           ))}

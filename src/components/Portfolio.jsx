@@ -63,7 +63,7 @@ const Portfolio = () => {
     duration: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: true,
     canSwipe: false,
     indicators: false,
@@ -88,7 +88,12 @@ const Portfolio = () => {
         <img src={Line} alt="" />
       </div>
 
-      <div className="portfolio-section">
+      <div
+        className="portfolio-section"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <Slide ref={slideRef} {...properties}>
           {projects.map((item, index) => (
             <div className="portfolio-section-item" key={index}>

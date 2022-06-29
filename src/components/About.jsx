@@ -1,15 +1,14 @@
 import React from "react";
-import Download from "../assets/download.svg";
 import Cynthia from "../assets/cynthia.jpeg";
 
 const About = () => {
   return (
     <div className="about" id="about">
-      <div className="about-left">
+      <div className="about-left" data-aos="fade-right">
         <img src={Cynthia} alt="cyn" />
       </div>
 
-      <div className="about-right">
+      <div className="about-right"  data-aos="fade-left">
         <p>About Me</p>
         <h3>
           I’m Cynthia Ilojeme, a professional and highly skilled frontend
@@ -28,16 +27,11 @@ const About = () => {
           towards achieving best result on each project I lay my hands on.
         </h3>
         <a
-          href="https://docs.google.com/document/d/1dq8b98hyF07QekDUl42JlFOx3eKrs1o1fnLr_7SOs0A/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1NLo_VVHSo2edMJxgA6YtkOM7pzfn1CKudgIDOMyrXSQ/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button-color">
-            <div className="button-img">
-              <img src={Download} alt="download" />
-            </div>
-            Download Resume
-          </button>
+          <button className="button-color">Resume</button>
         </a>
       </div>
     </div>

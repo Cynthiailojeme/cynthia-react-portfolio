@@ -21,7 +21,7 @@ const Header = () => {
           About Me
         </a>
         <a
-          href="https://docs.google.com/document/d/1dq8b98hyF07QekDUl42JlFOx3eKrs1o1fnLr_7SOs0A/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1NLo_VVHSo2edMJxgA6YtkOM7pzfn1CKudgIDOMyrXSQ/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="header-link-1"
@@ -41,7 +41,7 @@ const Header = () => {
           About Me
         </a>
         <a
-          href="https://docs.google.com/document/d/1dq8b98hyF07QekDUl42JlFOx3eKrs1o1fnLr_7SOs0A/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1NLo_VVHSo2edMJxgA6YtkOM7pzfn1CKudgIDOMyrXSQ/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="header-link-1"

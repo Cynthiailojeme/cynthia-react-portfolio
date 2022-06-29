@@ -3,7 +3,7 @@ import Cynthia from "../assets/cynthia.jpeg";
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" style={{overflowX: 'hidden'}}>
       <div className="about-left" data-aos="fade-right">
         <img src={Cynthia} alt="cyn" />
       </div>

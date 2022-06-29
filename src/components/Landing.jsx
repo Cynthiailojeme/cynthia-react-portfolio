@@ -13,16 +13,13 @@ const Landing = () => {
     <div className="landing" id="home">
       <div className="landing-left">
         <p>Hi There!</p>
-        <h1>
-          I'm{" "}
-          <div
-            className="name"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            Cynthia Ilojeme
-          </div>
+        <h1
+          className="name"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          I'm <span>Cynthia Ilojeme</span>
         </h1>
         <h3>a Frontend Developer.</h3>
         <div className="landing-left-underlay">

@@ -97,21 +97,32 @@
     align-items: center;
   }
 
-  #nav-check {
-    display: none;
-  }
-
   .header-mid {
     display: none;
     cursor: pointer;
     transition: all 0.5s ease-out;
 
-    &-item {
+    &-item,
+    &-item2 {
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
-      background: $portfolio-white;
+      background: $portfolio-deep;
       transition: all 0.5s ease-out;
+    }
+
+    &-item2:first-child {
+      background: $portfolio-white;
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &-item2:nth-child(2) {
+      opacity: 0;
+    }
+
+    &-item2:nth-child(3) {
+      background: $portfolio-white;
+      transform: rotate(-45deg) translate(7px, -6px);
     }
   }
 
@@ -430,8 +441,8 @@
     justify-content: center;
 
     &-item {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       background: $portfolio-deep;
       border-radius: 50%;
       display: flex;
@@ -545,8 +556,13 @@
   }
 
   .header {
-    background: $portfolio-deep;
+    background: $portfolio-background;
     padding: 15px 20px 0 20px;
+
+    .portfolio-logo {
+      font-size: 30px !important;
+      line-height: 31px !important;
+    }
 
     .header-mid {
       display: block;
@@ -556,7 +572,7 @@
       display: none;
     }
 
-    #nav-check:checked ~ .header-dropdown {
+    .header-dropdown {
       position: absolute;
       background: $portfolio-deep;
       top: 100%;
@@ -599,20 +615,6 @@
         }
       }
     }
-
-    #nav-check:checked ~ .header-mid {
-      .header-mid-item:first-child {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-
-      .header-mid-item:nth-child(2) {
-        opacity: 0;
-      }
-
-      .header-mid-item:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-      }
-    }
   }
 
   .landing {
@@ -622,6 +624,7 @@
     min-height: 600px;
     background: none;
     background-size: cover;
+    margin-top: 50px;
 
     &-left {
       width: 100%;
@@ -763,11 +766,5 @@
 
   .landing-left-underlay {
     margin-left: 0px;
-  }
-
-  .portfolio-logo {
-    color: $portfolio-white;
-    font-size: 30px !important;
-    line-height: 31px !important;
   }
 }

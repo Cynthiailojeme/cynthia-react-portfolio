@@ -8,6 +8,7 @@ import Whispa from "../assets/whispa-1.png";
 import Letshego from "../assets/letshego.png";
 import Nibss from "../assets/nibss.png";
 import Kafene from "../assets/kafene-1.png";
+import Enyata from "../assets/enyata.png";
 import "react-slideshow-image/dist/styles.css";
 
 const Portfolio = () => {
@@ -23,36 +24,43 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Tonote",
-      alt: "tonote",
-      image: Tonote,
-      info: "An online signing platform that helps you notarise documents and swear affidavits virtually.",
-      url: "https://www.gettonote.com/",
-    },
-    {
-      title: "Kafene",
-      alt: "kafene",
-      image: Kafene,
-      info: "A digital web and app-based lease to own platform that underwrites, approves, and enables payment in less than 5 minutes.",
-      url: "https://merchant.kafene.com/",
-    },
-    {
       title: "NIBSS Sandbox",
-      alt: "nibss",
+      alt: "A screenshot of NIBSS Sandbox website",
       image: Nibss,
       info: "Payment platform that enables users to apply virtually and get certication for NIP and POS applications.",
       url: "https://vi-nibsssandbox.nibss-plc.com.ng/",
     },
     {
+      title: "Kafene",
+      alt: "A screenshot of Kafene website",
+      image: Kafene,
+      info: "A digital web and app-based lease to own platform that underwrites, approves, and enables payment in less than 5 minutes.",
+      url: "https://kafene.com/",
+    },
+    {
+      title: "Enyata",
+      alt: "A screenshot of Enyata website",
+      image: Enyata,
+      info: "Official website for Enyata, a technology company providing engineering-as-a-service solutions at scale to organizations across multiple industries.",
+      url: "https://enyata.com/",
+    },
+    {
+      title: "Tonote",
+      alt: "A screenshot of website",
+      image: Tonote,
+      info: "An online signing platform that helps you notarise documents and swear affidavits virtually.",
+      url: "https://www.gettonote.com/",
+    },
+    {
       title: "Whispa Health",
-      alt: "whispa",
+      alt: "A screenshot of whispa Admin Dashboard",
       image: Whispa,
       info: "Admin dashboard for a mobile application that provides young people with private, even anonymous access to Sexual and Reproductive Health (SRH) information.",
       url: "https://dashboard.whispahealth.com/",
     },
     {
       title: "Letshego SMS Hub",
-      alt: "letshego",
+      alt: "A screenshot of Letshego SMS Hub Admin dashboard",
       image: Letshego,
       info: "Admin dashboard for the managemeent of SMS being sent by providers from various countries.",
       url: null,
@@ -60,13 +68,13 @@ const Portfolio = () => {
   ];
 
   const properties = {
-    duration: 3000,
+    duration: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: true,
     canSwipe: false,
-    indicators: false,
+    indicators: true,
     arrows: true,
     prevArrow: (
       <div className="carousel-item" onClick={() => back()}>
@@ -90,9 +98,6 @@ const Portfolio = () => {
 
       <div
         className="portfolio-section"
-        data-aos="zoom-in"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
       >
         <Slide ref={slideRef} {...properties}>
           {projects.map((item, index) => (

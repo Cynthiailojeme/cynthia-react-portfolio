@@ -15,9 +15,9 @@ const Landing = () => {
         <p>Hi There!</p>
         <h1
           className="name"
-          data-aos="flip-left"
+          data-aos="fade-right"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           I'm <span>Cynthia Ilojeme</span>
         </h1>

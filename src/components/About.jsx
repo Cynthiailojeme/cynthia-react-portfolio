@@ -27,11 +27,11 @@ const About = () => {
           towards achieving best result on each project I lay my hands on.
         </h3>
         <a
-          href="https://docs.google.com/document/d/1NLo_VVHSo2edMJxgA6YtkOM7pzfn1CKudgIDOMyrXSQ/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1cbkJ-Ip-wZZdt1SfxNdyAIJBnfxphFtY2bTn3S-r-kI/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button-color">Resume</button>
+          <button className="button-color">View Resume</button>
         </a>
       </div>
     </div>

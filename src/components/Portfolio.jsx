@@ -9,6 +9,7 @@ import Letshego from "../assets/letshego.png";
 import Nibss from "../assets/nibss.png";
 import Kafene from "../assets/kafene-1.png";
 import Enyata from "../assets/enyata.png";
+import CynthiaPortfolio from "../assets/portfolio.png";
 import "react-slideshow-image/dist/styles.css";
 
 const Portfolio = () => {
@@ -65,6 +66,13 @@ const Portfolio = () => {
       info: "Admin dashboard for the managemeent of SMS being sent by providers from various countries.",
       url: null,
     },
+    {
+      title: "Cynthia Ilojeme Portfolio",
+      alt: "A screenshot of Cynthia Ilojeme's Porfolio",
+      image: CynthiaPortfolio,
+      info: "A porfolio website for Cynthia Ilojeme.",
+      url: 'https://cynthiailojeme.netlify.app/',
+    },
   ];
 
   const properties = {
@@ -96,9 +104,7 @@ const Portfolio = () => {
         <img src={Line} alt="" />
       </div>
 
-      <div
-        className="portfolio-section"
-      >
+      <div className="portfolio-section">
         <Slide ref={slideRef} {...properties}>
           {projects.map((item, index) => (
             <div className="portfolio-section-item" key={index}>

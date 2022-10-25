@@ -1,14 +1,15 @@
 import React from "react";
 import Cynthia from "../assets/cynthia.jpeg";
+import { resumeLink } from "../utils/data";
 
 const About = () => {
   return (
-    <div className="about" id="about" style={{overflowX: 'hidden'}}>
+    <div className="about" id="about" style={{ overflowX: "hidden" }}>
       <div className="about-left" data-aos="fade-right">
         <img src={Cynthia} alt="cyn" />
       </div>
 
-      <div className="about-right"  data-aos="fade-left">
+      <div className="about-right" data-aos="fade-left">
         <p>About Me</p>
         <h3>
           I’m Cynthia Ilojeme, a professional and highly skilled frontend
@@ -26,11 +27,7 @@ const About = () => {
           Being a diligent, hardworking and result oriented lady, I always work
           towards achieving best result on each project I lay my hands on.
         </h3>
-        <a
-          href="https://docs.google.com/document/d/1cbkJ-Ip-wZZdt1SfxNdyAIJBnfxphFtY2bTn3S-r-kI/edit?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={resumeLink} target="_blank" rel="noreferrer">
           <button className="button-color">View Resume</button>
         </a>
       </div>

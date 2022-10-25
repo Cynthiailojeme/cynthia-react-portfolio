@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { resumeLink } from "../utils/data";
 
 const Header = () => {
   const [clicked, setClicked] = useState(false);
@@ -8,10 +9,7 @@ const Header = () => {
   };
 
   return (
-    <div
-      className="header"
-      style={{ background: clicked && "#4169E1" }}
-    >
+    <div className="header" style={{ background: clicked && "#4169E1" }}>
       <div className="header-left">
         <a
           href="#home"
@@ -28,7 +26,7 @@ const Header = () => {
             About Me
           </a>
           <a
-            href="https://docs.google.com/document/d/1cbkJ-Ip-wZZdt1SfxNdyAIJBnfxphFtY2bTn3S-r-kI/edit?usp=sharing"
+            href={resumeLink}
             target="_blank"
             rel="noreferrer"
             className="header-link-1"
@@ -53,7 +51,7 @@ const Header = () => {
           About Me
         </a>
         <a
-          href="https://docs.google.com/document/d/1cbkJ-Ip-wZZdt1SfxNdyAIJBnfxphFtY2bTn3S-r-kI/edit?usp=sharing"
+          href={resumeLink}
           target="_blank"
           rel="noreferrer"
           className="header-link-1"

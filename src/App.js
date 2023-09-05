@@ -1,7 +1,9 @@
-import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Home from "./pages/Home";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AllRoutes from "./routes";
+import Loader from "./components/Loader";
 
 function App() {
   AOS.init({
@@ -11,7 +13,38 @@ function App() {
     delay: 100,
   });
 
-  return <Home />;
+  const { pathname } = useLocation();
+
+  console.log("pathname", pathname);
+
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(
+    () => {
+      if (pathname === "/") {
+        const timer = setTimeout(() => {
+          setIsReady("ready");
+        }, 3500);
+
+        return () => clearTimeout(timer);
+      }
+
+      const timer = setTimeout(() => {
+        setIsReady("ready");
+      }, 0);
+
+      return () => clearTimeout(timer);
+    },
+    // eslint-disable-next-line
+    []
+  );
+
+  return (
+    <>
+      {isReady && <AllRoutes />}
+      {!isReady && <Loader />}
+    </>
+  );
 }
 
 export default App;

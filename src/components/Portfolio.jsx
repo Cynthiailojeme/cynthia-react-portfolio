@@ -3,13 +3,13 @@ import { Slide } from "react-slideshow-image";
 import Line from "../assets/portfolio-line.svg";
 import Left from "../assets/chevron-left.svg";
 import Right from "../assets/chevron-right.svg";
-import Tonote from "../assets/tonote.png";
-import Whispa from "../assets/whispa-1.png";
-import Letshego from "../assets/letshego.png";
-import Nibss from "../assets/nibss.png";
-import Kafene from "../assets/kafene-1.png";
-import Enyata from "../assets/enyata.png";
-import CynthiaPortfolio from "../assets/portfolio.png";
+import Tonote from "../assets/tonote-min.png";
+import Whispa from "../assets/whispa-1-min.png";
+import Letshego from "../assets/letshego-min.png";
+import Nibss from "../assets/nibss-min.png";
+import Kafene from "../assets/kafene-1-min.png";
+import Enyata from "../assets/enyata-min.png";
+import CynthiaPortfolio from "../assets/portfolio-min.png";
 import "react-slideshow-image/dist/styles.css";
 
 const Portfolio = () => {
@@ -71,7 +71,7 @@ const Portfolio = () => {
       alt: "A screenshot of Cynthia Ilojeme's Porfolio",
       image: CynthiaPortfolio,
       info: "A porfolio website for Cynthia Ilojeme.",
-      url: 'https://cynthiailojeme.netlify.app/',
+      url: "https://cynthiailojeme.netlify.app/",
     },
   ];
 

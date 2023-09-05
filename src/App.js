@@ -15,8 +15,6 @@ function App() {
 
   const { pathname } = useLocation();
 
-  console.log("pathname", pathname);
-
   const [isReady, setIsReady] = useState(false);
 
   useEffect(

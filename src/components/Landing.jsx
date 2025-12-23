@@ -21,12 +21,12 @@ const Landing = () => {
         >
           I'm <span>Cynthia Ilojeme</span>
         </h1>
-        <h3>a Frontend Developer.</h3>
+        <h3>a Frontend Engineer.</h3>
         <div className="landing-left-underlay">
           <img src={Underlay} alt="underlay" />
         </div>
         <h5>
-          Experienced Frontend Engineer with a demonstrated <br /> history of
+          Experienced frontend engineer with a demonstrated <br /> history of
           working in the information technology and <br /> services industry,
           passionate about solving problems <br /> with code.
         </h5>

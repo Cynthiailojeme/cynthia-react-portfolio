@@ -22,7 +22,7 @@ function App() {
       if (pathname === "/") {
         const timer = setTimeout(() => {
           setIsReady("ready");
-        }, 3500);
+        }, 2500);
 
         return () => clearTimeout(timer);
       }

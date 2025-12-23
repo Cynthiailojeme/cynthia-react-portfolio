@@ -30,8 +30,8 @@ const Loader = () => {
             <svg viewBox="0 0 100 100" className="loader-svg">
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#4facfe" />
-                  <stop offset="100%" stopColor="#00f2fe" />
+                  <stop offset="0%" stopColor="#4169E1" />{" "}
+                  <stop offset="100%" stopColor="#87CEFA" />{" "}
                 </linearGradient>
               </defs>
               <circle cx="50" cy="50" r="45" className="loader-circle-bg" />
@@ -68,14 +68,17 @@ const Loader = () => {
                 </span>
               ))}
             </h1>
-            <p className="loader-subtitle">Preparing your experience</p>
+            <p className="loader-subtitle">Good things loading</p>
           </div>
 
           <div className="loader-bar-container">
             <div className="loader-bar-track">
               <div
                 className="loader-bar-fill"
-                style={{ width: `${progress}%` }}
+                style={{
+                  width: `${progress}%`,
+                  background: "linear-gradient(90deg, #4169E1, #87CEFA)",
+                }}
               ></div>
             </div>
           </div>
